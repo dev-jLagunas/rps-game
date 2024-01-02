@@ -5,5 +5,6 @@ import { HomeScreenComponent } from './home-screen/home-screen.component';
 export const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomeScreenComponent },
-  { path: 'game', component: GameplayComponent },
+  { path: 'gameplay', component: GameplayComponent },
+  { path: '**', redirectTo: 'home' },
 ];
