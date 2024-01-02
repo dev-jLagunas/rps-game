@@ -1,1 +1,20 @@
-<p>rules-modal works!</p>
+<div class="rules-container">
+  <button class="modal-btn" type="button" (click)="openDialog()">RULES</button>
+  <dialog #myDialog class="dialog-modal">
+    <h2 class="modal-title">RULES</h2>
+    <figure>
+      <img
+        src="assets/icon-svgs/image-rules-bonus.svg"
+        alt="Image display the gameplay rules."
+        class="rules-img"
+      />
+    </figure>
+    <button class="close-btn" type="button">
+      <img
+        src="assets/icon-svgs/icon-close.svg"
+        alt="Dialog close 'X' button"
+        (click)="closeDialog()"
+      />
+    </button>
+  </dialog>
+</div>

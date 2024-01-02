@@ -1,0 +1,45 @@
+// Variables Import;
+@import "../../styles.scss";
+
+/************************************
+    Rules Modal Component Styles
+*************************************/
+
+//Open Modal Btn on Main Screen
+
+.modal-btn {
+  background-color: transparent;
+  border: 4px solid $header-outline;
+  font-size: $font-size-medium;
+  color: $light-text;
+  letter-spacing: $letter-spacing;
+  margin-bottom: 2rem;
+  padding: 1rem 2rem;
+  border-radius: $border-radius;
+  font-weight: $font-weight-semi-bold;
+}
+
+//Inside The Actual Modal Styles
+
+.dialog-modal {
+  border: 0;
+  text-align: center;
+}
+
+::backdrop {
+  background-color: $background-white;
+}
+
+.modal-title {
+  font-size: $font-size-large;
+  color: $dark-text;
+  font-weight: $font-weight-bold;
+  margin-bottom: $margin-x-large;
+}
+
+.close-btn {
+  border: 0;
+  background-color: transparent;
+  font-size: $font-size-large;
+  margin-top: $margin-x-large;
+}

@@ -1,0 +1,51 @@
+// Variables Import;
+@import "../../styles.scss";
+
+/************************************
+   Score Component Styles
+*************************************/
+
+//Containers/Wrappers Styles
+
+.score-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.game-logo-wrapper {
+  height: 75px;
+}
+
+.score-wrapper {
+  height: 90px;
+  width: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $background-white;
+  border-radius: $border-radius;
+}
+
+// Image Styles
+
+.game-logo {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+// Text Styles
+
+.score-title {
+  color: $score-text;
+  letter-spacing: $letter-spacing;
+  font-size: $font-size-small;
+}
+
+.score-number {
+  color: $dark-text;
+  font-weight: $font-weight-semi-bold;
+  font-size: $font-size-x-large;
+}

@@ -19,3 +19,11 @@
   align-items: center;
   justify-content: space-between;
 }
+
+.header-container {
+  border: 4px solid $header-outline;
+  width: 80%;
+  margin-top: $margin-regular;
+  padding: 1rem;
+  border-radius: $border-radius;
+}
