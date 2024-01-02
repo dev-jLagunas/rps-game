@@ -1,0 +1,21 @@
+// Variables Import;
+@import "../styles.scss";
+
+/************************************
+    App Root Component Styles
+*************************************/
+
+.project-container {
+  height: 100vh;
+  background: linear-gradient(
+    to right,
+    $background-gradient-start,
+    $background-gradient-end
+  );
+  color: $light-text;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
