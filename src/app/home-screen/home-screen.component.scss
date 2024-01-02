@@ -4,3 +4,57 @@
 /************************************
     Home Screen Component Styles
 *************************************/
+
+.home-container {
+  position: relative;
+}
+
+//Button Positioning and Styling Group
+
+.icon-svg {
+  background: $background-white;
+  padding: 1rem;
+  height: 40px;
+  border-radius: $border-radius-circle;
+}
+
+.icon-btn {
+  border-radius: $border-radius-circle;
+  position: absolute;
+}
+
+.icon-btn:hover {
+  cursor: pointer;
+}
+
+// Button Positioning and Styling Individual
+
+.btn-scissors {
+  border: 10px solid $scissors-gradient-start;
+  left: 36%;
+  top: -10%;
+}
+
+.btn-paper {
+  border: 10px solid $paper-gradient-start;
+  right: -1%;
+  top: 25%;
+}
+
+.btn-rock {
+  border: 10px solid $rock-gradient-start;
+  right: 10%;
+  bottom: -10%;
+}
+
+.btn-lizard {
+  border: 10px solid $lizard-gradient-start;
+  left: 10%;
+  bottom: -10%;
+}
+
+.btn-spock {
+  border: 10px solid $cyan-gradient-start;
+  left: -1%;
+  top: 25%;
+}
