@@ -5,6 +5,7 @@
 /tmp
 /out-tsc
 /bazel-out
+/rock-paper-scissors-master
 
 # Node
 /node_modules
