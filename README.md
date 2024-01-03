@@ -1,27 +1,37 @@
-# RpsGame
+# Rock Paper Scissors Advanced Frontend Mentor Challenge
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.0.
+## Description
 
-## Development server
+This project is an advanced challenge from Frontend Mentor, implemented using Angular v17, SCSS, and HTML. The challenge was an excellent opportunity to delve deeper into Angular's control flow, RxJS Observables, and the use of a shared service for communication between components. The Angular Router was also utilized to manage navigation between different components.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+A significant focus was placed on adhering to best practices for HTML and SCSS. This ensured the creation of clean, maintainable, and scalable code. The project serves as a testament to the power of Angular and its capabilities in building complex, interactive web applications. I can imagine how much more complex this project would have been without a framework like Angular.
 
-## Code scaffolding
+## Getting Started
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Prerequisites
 
-## Build
+To run this project, you will need Node.js and Angular CLI installed on your local machine.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Installation
 
-## Running unit tests
+1. Clone this repository to your local machine or download the files as a zip.
+2. Navigate to the project directory.
+3. Run `npm install` to install the necessary dependencies.
+4. Run `ng serve` to start the development server.
+5. Open your web browser and navigate to `http://localhost:4200/`.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Usage
 
-## Running end-to-end tests
+This project is an interactive Angular application. To view and interact with the project, start the development server as described in the Installation section.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Contributing
 
-## Further help
+This project is a practice project and is not currently accepting contributions.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## License
+
+This project is licensed under the MIT License - see the `LICENSE.md` file for details.
+
+## Contact
+
+For any questions or concerns, please contact Juan Lagunas at dev.jlagunas@gmail.com.
