@@ -5,7 +5,7 @@
     Rules Modal Component Styles
 *************************************/
 
-//Open Modal Btn on Main Screen
+/* Open Modal Btn on Main Screen */
 
 .modal-btn {
   background-color: transparent;
@@ -19,7 +19,11 @@
   font-weight: $font-weight-semi-bold;
 }
 
-//Inside The Actual Modal Styles
+.modal-btn:hover {
+  cursor: pointer;
+}
+
+/* Inside The Actual Modal Styles */
 
 .dialog-modal {
   border: 0;
@@ -44,10 +48,13 @@
   margin-top: $margin-x-large;
 }
 
+/* Media query at min-width 768px */
+
 @media screen and (min-width: 768px) {
   .dialog-modal {
     padding: 2rem;
   }
+
   ::backdrop {
     background-color: black;
     opacity: 0.5;

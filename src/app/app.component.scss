@@ -1,9 +1,11 @@
-// Variables Import;
+/* Variables Import */
 @import "../styles.scss";
 
 /************************************
     App Root Component Styles
 *************************************/
+
+/* Container Styles */
 
 .project-container {
   height: 100vh;
@@ -15,39 +17,42 @@
   color: $light-text;
   font-family: "Barlow Semi Condensed", sans-serif;
   text-align: center;
-  padding-top: 1rem;
+  padding-top: $padding-regular;
 }
 
 .header-container {
   border: 4px solid $header-outline;
   width: 80%;
-  margin-inline: auto;
-  padding: 1rem;
+  margin-inline: $margin-inline;
+  padding: $padding-regular;
   border-radius: $border-radius;
 }
 
 .main-container {
   text-align: center;
   width: 90%;
-  margin-inline: auto;
+  margin-inline: $margin-inline;
   margin-top: 3rem;
+
+  /* Media Query min-width: 768px */
+
+  @media screen and (min-width: 768px) {
+    .header-container {
+      width: 50%;
+    }
+
+    .main-container {
+      margin-top: 5rem;
+    }
+
+    .footer-container {
+      display: flex;
+      justify-content: flex-end;
+      margin-right: 10rem;
+    }
+  }
 }
 
 .footer-container {
   margin-top: 4rem;
-}
-@media screen and (min-width: 768px) {
-  .header-container {
-    width: 50%;
-  }
-
-  .main-container {
-    margin-top: 5rem;
-  }
-
-  .footer-container {
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 10rem;
-  }
 }

@@ -132,16 +132,11 @@ table {
 *************************************/
 
 // Primary Colors
-$scissors-gradient-start: hsl(39, 89%, 49%);
-$scissors-gradient-end: hsl(40, 84%, 53%);
-$paper-gradient-start: hsl(230, 89%, 62%);
-$paper-gradient-end: hsl(230, 89%, 65%);
-$rock-gradient-start: hsl(349, 71%, 52%);
-$rock-gradient-end: hsl(349, 70%, 56%);
-$lizard-gradient-start: hsl(261, 73%, 60%);
-$lizard-gradient-end: hsl(261, 72%, 63%);
-$cyan-gradient-start: hsl(189, 59%, 53%);
-$cyan-gradient-end: hsl(189, 58%, 57%);
+$scissors-border: hsl(39, 89%, 49%);
+$paper-border: hsl(230, 89%, 62%);
+$rock-border: hsl(349, 71%, 52%);
+$lizard-border: hsl(261, 73%, 60%);
+$cyan-border: hsl(189, 59%, 53%);
 
 // Neutral Colors
 $dark-text: hsl(229, 25%, 31%);
@@ -174,3 +169,5 @@ $font-weight-bold: 700;
 //Margin/Padding
 $margin-regular: 1rem;
 $margin-x-large: 4rem;
+$margin-inline: auto;
+$padding-regular: 1rem;

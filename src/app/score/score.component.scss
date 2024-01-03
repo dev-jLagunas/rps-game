@@ -5,7 +5,7 @@
    Score Component Styles
 *************************************/
 
-//Containers/Wrappers Styles
+/* Containers/Wrappers Styles */
 
 .score-container {
   display: flex;
@@ -28,7 +28,7 @@
   border-radius: $border-radius;
 }
 
-// Image Styles
+/* Image Styles */
 
 .game-logo {
   height: 100%;
@@ -36,7 +36,7 @@
   object-fit: cover;
 }
 
-// Text Styles
+/* Text Styles */
 
 .score-title {
   color: $score-text;

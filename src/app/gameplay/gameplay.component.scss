@@ -21,23 +21,23 @@
 }
 
 .btn-scissors {
-  border: 15px solid $scissors-gradient-start;
+  border: 15px solid $scissors-border;
 }
 
 .btn-paper {
-  border: 15px solid $paper-gradient-start;
+  border: 15px solid $paper-border;
 }
 
 .btn-rock {
-  border: 15px solid $rock-gradient-start;
+  border: 15px solid $rock-border;
 }
 
 .btn-lizard {
-  border: 15px solid $lizard-gradient-start;
+  border: 15px solid $lizard-border;
 }
 
 .btn-spock {
-  border: 15px solid $cyan-gradient-start;
+  border: 15px solid $cyan-border;
 }
 
 .results-wrapper {
@@ -60,6 +60,9 @@
   cursor: pointer;
 }
 
+/* Media query at min-width 768px */
+
+// Switch to grid layout for larger screens to meet project requirements
 @media screen and (min-width: 768px) {
   .choices-container {
     display: grid;

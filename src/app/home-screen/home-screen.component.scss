@@ -9,11 +9,11 @@
   position: relative;
 }
 
-//Button Positioning and Styling Group
+/* Button Positioning and Styling Group */
 
 .icon-svg {
   background: $background-white;
-  padding: 1rem;
+  padding: $padding-regular;
   height: 40px;
   border-radius: $border-radius-circle;
 }
@@ -30,38 +30,41 @@
 // Button Positioning and Styling Individual
 
 .btn-scissors {
-  border: 10px solid $scissors-gradient-start;
+  border: 10px solid $scissors-border;
   left: 36%;
   top: -10%;
 }
 
 .btn-paper {
-  border: 10px solid $paper-gradient-start;
+  border: 10px solid $paper-border;
   right: -1%;
   top: 25%;
 }
 
 .btn-rock {
-  border: 10px solid $rock-gradient-start;
+  border: 10px solid $rock-border;
   right: 10%;
   bottom: -10%;
 }
 
 .btn-lizard {
-  border: 10px solid $lizard-gradient-start;
+  border: 10px solid $lizard-border;
   left: 10%;
   bottom: -10%;
 }
 
 .btn-spock {
-  border: 10px solid $cyan-gradient-start;
+  border: 10px solid $cyan-border;
   left: -1%;
   top: 25%;
 }
 
 /************************************************
-    Home Screen Component Styles min-width: 768px
+    Home Screen Component Styles ALL Media Queries
 *************************************************/
+
+// Adjusting button positions at different breakpoints to maintain layout.
+// Using absolute positioning due to project requirements.
 
 @media screen and (min-width: 520px) {
   .btn-scissors {
