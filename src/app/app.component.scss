@@ -17,13 +17,12 @@
   color: $light-text;
   font-family: "Barlow Semi Condensed", sans-serif;
   text-align: center;
-  padding-top: $padding-regular;
+  padding-top: 1rem;
 }
 
 .header-container {
   border: 4px solid $header-outline;
-  width: 50%;
-  height: max-content;
+  width: 70%;
   margin-inline: $margin-inline;
   padding: $padding-regular;
   border-radius: $border-radius;
