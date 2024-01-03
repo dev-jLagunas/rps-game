@@ -15,7 +15,7 @@
 .svg-icon {
   background: $background-white;
   padding: 2.5rem;
-  height: 90px;
+  height: 40px;
   border-radius: $border-radius-circle;
   margin-bottom: 2rem;
 }
@@ -41,13 +41,12 @@
 }
 
 .results-wrapper {
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .results {
   color: $light-text;
   font-size: $font-size-x-large;
-  margin-bottom: 2rem;
 }
 
 .replay-btn {
@@ -80,5 +79,9 @@
 
   .computer-choice {
     grid-area: computer;
+  }
+
+  .replay-btn {
+    margin-top: 2rem;
   }
 }

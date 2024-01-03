@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { GameplayService } from '../gameplay.service';
 import { AsyncPipe } from '@angular/common';
 
@@ -9,8 +9,12 @@ import { AsyncPipe } from '@angular/common';
   templateUrl: './score.component.html',
   styleUrl: './score.component.scss',
 })
-export class ScoreComponent {
-  gameScore$ = this.gameplayService.score$;
+export class ScoreComponent implements OnInit {
+  score$ = this.gameplayService.score$;
 
   constructor(private gameplayService: GameplayService) {}
+
+  ngOnInit(): void {
+    this.score$ = this.gameplayService.score$;
+  }
 }

@@ -18,6 +18,4 @@ import { RulesModalComponent } from './rules-modal/rules-modal.component';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
-export class AppComponent {
-  title = 'rps-game';
-}
+export class AppComponent {}

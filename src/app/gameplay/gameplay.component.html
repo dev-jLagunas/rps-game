@@ -1,32 +1,32 @@
 <section class="choices-container">
-  <ng-container *ngIf="playerChoice$ | async as playerChoice">
-    <figure>
-      <img
-        [src]="'assets/icon-svgs/icon-' + playerChoice + '.svg'"
-        alt="Player choice svg icon."
-        class="svg-icon"
-        [class]="'btn-' + playerChoice"
-      />
-      <figcaption>
-        <p>YOU PICKED</p>
-      </figcaption>
-    </figure>
-  </ng-container>
-  <ng-container *ngIf="computerChoice$ | async as computerChoice">
-    <figure>
-      <img
-        [src]="'assets/icon-svgs/icon-' + computerChoice + '.svg'"
-        alt="Computer choice svg icon."
-        class="svg-icon"
-        [class]="'btn-' + computerChoice"
-      />
-      <figcaption>
-        <p>THE HOUSE PICKED</p>
-      </figcaption>
-    </figure>
-  </ng-container>
-  <div *ngIf="winner" class="results-wrapper">
-    <p class="results">{{ winner }}</p>
-    <button class="replay-btn" (click)="playAgain()">PLAY AGAIN</button>
+  @if (playerChoice$ | async; as playerChoice) {
+  <figure>
+    <img
+      [src]="'assets/icon-svgs/icon-' + playerChoice + '.svg'"
+      alt="Player choice svg icon."
+      class="svg-icon"
+      [class]="'btn-' + playerChoice"
+    />
+    <figcaption>
+      <p>YOU PICKED</p>
+    </figcaption>
+  </figure>
+  } @if (computerChoice$ | async; as computerChoice){
+  <figure>
+    <img
+      [src]="'assets/icon-svgs/icon-' + computerChoice + '.svg'"
+      alt="Computer choice svg icon."
+      class="svg-icon"
+      [class]="'btn-' + computerChoice"
+    />
+    <figcaption>
+      <p>THE HOUSE PICKED</p>
+    </figcaption>
+  </figure>
+  } @if (winner$) {
+  <div class="results-wrapper">
+    <p class="results">{{ winner$ | async }}</p>
+    <button class="replay-btn" (click)="onPlayAgain()">PLAY AGAIN</button>
   </div>
+  }
 </section>

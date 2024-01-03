@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { GameplayService } from '../gameplay.service';
+import { GameplayService, Choice } from '../gameplay.service';
 import { Router } from '@angular/router';
 
 @Component({
@@ -15,7 +15,7 @@ export class HomeScreenComponent {
     private router: Router
   ) {}
 
-  playerChoice(choice: string) {
+  playerChoice(choice: Choice) {
     this.gameplayService.updatePlayerChoice(choice);
     this.router.navigate(['/gameplay']);
   }

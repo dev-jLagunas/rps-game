@@ -1,52 +1,50 @@
 import { Component, OnInit } from '@angular/core';
-import { GameplayService } from '../gameplay.service';
-import { Observable, combineLatest } from 'rxjs';
+import { GameplayService, Choice, Outcome } from '../gameplay.service';
 import { AsyncPipe } from '@angular/common';
-import { NgIf } from '@angular/common';
-
-export type Choice = 'rock' | 'paper' | 'scissors' | 'lizard' | 'spock';
+import { Observable } from 'rxjs';
+import { map } from 'rxjs/operators';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-gameplay',
   standalone: true,
-  imports: [AsyncPipe, NgIf],
+  imports: [AsyncPipe],
   templateUrl: './gameplay.component.html',
   styleUrl: './gameplay.component.scss',
 })
 export class GameplayComponent implements OnInit {
-  playerChoice$!: Observable<string | null>;
-  computerChoice$!: Observable<string | null>;
-  winner!: string | null;
+  score$ = this.gameplayService.score$;
+  playerChoice$ = this.gameplayService.playerChoice$;
+  computerChoice$ = this.gameplayService.computerChoice$;
+  winner$!: Observable<Outcome | null>;
 
-  constructor(private gameplayService: GameplayService) {}
+  constructor(
+    private gameplayService: GameplayService,
+    private router: Router
+  ) {}
 
   ngOnInit(): void {
-    this.playerChoice$ = this.gameplayService.playerChoice$;
-    this.computerChoice$ = this.gameplayService.computerChoice$;
-
-    if (this.playerChoice$ && this.computerChoice$) {
-      this.checkWinner();
-    }
-  }
-
-  checkWinner(): void {
-    combineLatest([this.playerChoice$, this.computerChoice$]).subscribe(
-      ([playerChoice, computerChoice]) => {
+    this.winner$ = this.gameplayService.playerChoice$.pipe(
+      map((playerChoice) => {
+        const computerChoice = this.gameplayService.computerChoice;
         if (playerChoice && computerChoice) {
-          this.winner = this.gameplayService.decideWinner(
-            playerChoice as Choice,
-            computerChoice as Choice
+          return this.gameplayService.decideWinner(
+            playerChoice,
+            computerChoice
           );
-          this.gameplayService.checkAndScoreWinner(
-            playerChoice as Choice,
-            computerChoice as Choice
-          );
+        } else {
+          return null;
         }
-      }
+      })
     );
   }
 
-  playAgain(): void {
+  onPlayerChoice(choice: Choice): void {
+    this.gameplayService.updatePlayerChoice(choice);
+  }
+
+  onPlayAgain(): void {
     this.gameplayService.playAgain();
+    this.router.navigate(['/']);
   }
 }
