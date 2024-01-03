@@ -7,36 +7,37 @@
 
 .choices-container {
   display: flex;
+  align-items: center;
   justify-content: space-evenly;
-  align-items: start;
+  flex-wrap: wrap;
 }
 
 .svg-icon {
   background: $background-white;
-  padding: 1rem;
-  height: 70px;
+  padding: 2.5rem;
+  height: 90px;
   border-radius: $border-radius-circle;
   margin-bottom: 2rem;
 }
 
 .btn-scissors {
-  border: 10px solid $scissors-gradient-start;
+  border: 15px solid $scissors-gradient-start;
 }
 
 .btn-paper {
-  border: 10px solid $paper-gradient-start;
+  border: 15px solid $paper-gradient-start;
 }
 
 .btn-rock {
-  border: 10px solid $rock-gradient-start;
+  border: 15px solid $rock-gradient-start;
 }
 
 .btn-lizard {
-  border: 10px solid $lizard-gradient-start;
+  border: 15px solid $lizard-gradient-start;
 }
 
 .btn-spock {
-  border: 10px solid $cyan-gradient-start;
+  border: 15px solid $cyan-gradient-start;
 }
 
 .results-wrapper {
@@ -58,4 +59,26 @@
   border-radius: $border-radius;
   border: none;
   cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .choices-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "player results computer";
+    width: max-content;
+    margin: 0 auto;
+  }
+
+  .player-choice {
+    grid-area: player;
+  }
+
+  .results-wrapper {
+    grid-area: results;
+  }
+
+  .computer-choice {
+    grid-area: computer;
+  }
 }

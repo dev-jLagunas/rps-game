@@ -58,3 +58,115 @@
   left: -1%;
   top: 25%;
 }
+
+/************************************************
+    Home Screen Component Styles min-width: 768px
+*************************************************/
+
+@media screen and (min-width: 520px) {
+  .btn-scissors {
+    left: 42%;
+    top: -10%;
+  }
+
+  .btn-paper {
+    right: 12%;
+    top: 25%;
+  }
+
+  .btn-rock {
+    right: 20%;
+    bottom: -10%;
+  }
+
+  .btn-lizard {
+    left: 20%;
+    bottom: -10%;
+  }
+
+  .btn-spock {
+    left: 12%;
+    top: 25%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .btn-scissors {
+    left: 43%;
+    top: -10%;
+  }
+
+  .btn-paper {
+    right: 22%;
+    top: 25%;
+  }
+
+  .btn-rock {
+    right: 28%;
+    bottom: -10%;
+  }
+
+  .btn-lizard {
+    left: 29%;
+    bottom: -10%;
+  }
+
+  .btn-spock {
+    left: 22%;
+    top: 25%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .btn-scissors {
+    left: 44%;
+    top: -10%;
+  }
+
+  .btn-paper {
+    right: 29%;
+    top: 25%;
+  }
+
+  .btn-rock {
+    right: 35%;
+    bottom: -10%;
+  }
+
+  .btn-lizard {
+    left: 35%;
+    bottom: -10%;
+  }
+
+  .btn-spock {
+    left: 30%;
+    top: 25%;
+  }
+}
+
+@media screen and (min-width: 1324px) {
+  .btn-scissors {
+    left: 46%;
+    top: -10%;
+  }
+
+  .btn-paper {
+    right: 38%;
+    top: 25%;
+  }
+
+  .btn-rock {
+    right: 40%;
+    bottom: -10%;
+  }
+
+  .btn-lizard {
+    left: 40%;
+    bottom: -10%;
+  }
+
+  .btn-spock {
+    left: 38%;
+    top: 25%;
+  }
+}

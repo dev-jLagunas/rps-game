@@ -43,3 +43,23 @@
   font-size: $font-size-large;
   margin-top: $margin-x-large;
 }
+
+@media screen and (min-width: 768px) {
+  .dialog-modal {
+    padding: 2rem;
+  }
+  ::backdrop {
+    background-color: black;
+    opacity: 0.5;
+  }
+
+  .modal-title {
+    text-align: left;
+  }
+
+  .close-btn {
+    position: absolute;
+    top: -7%;
+    right: 5%;
+  }
+}
